@@ -1,0 +1,225 @@
+/* Reset some browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e1e; /* Dark Grey */
+    color: #e0e0e0; /* Light Grey Text */
+}
+  
+/* Navbar Styling */
+.navbar {
+    background-color: #2c3e50; /* Dark Blue */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.slogan {
+    color: #e0e0e0; /* Light Grey */
+    font-size: 18px;
+    text-align: center;
+    flex-grow: 1;
+}
+  
+.navbar .profile {
+    background-color: #34495e; /* Grey Blue */
+    color: #e0e0e0; /* Light Grey */
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    display: inline-block;
+}
+  
+/* Hero Section Styling */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?work,productivity') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.hero-content {
+    text-align: center;
+    color: white;
+}
+  
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #3498db; /* Bright Blue */
+}
+  
+.hero-future {
+    font-size: 24px;
+    color: #2980b9; /* Darker Blue */
+}
+  
+.hero-text {
+    font-size: 18px;
+    color: #95a5a6; /* Greyish Blue */
+}
+  
+/* CTA Button Styling */
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #2980b9; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+  
+.cta-btn:hover {
+    background-color: #1f618d; /* Darker Blue */
+}
+  
+/* Task Section Styling */
+.task-section {
+    padding: 30px;
+    margin-top: 20px; /* Slight margin to avoid collapse */
+}
+  
+.task-form {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+  
+.task-form input, .task-form textarea, .task-form select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #34495e; /* Grey Blue */
+    width: 100%;
+    font-size: 16px;
+    background-color: #2c3e50; /* Dark Blue */
+    color: #e0e0e0; /* Light Grey Text */
+}
+  
+/* Add Task Button Styling */
+#add-task-btn {
+    background-color: #34495e; /* Grey Blue */
+    color: #e0e0e0; /* Light Grey */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+  
+#add-task-btn:hover {
+    background-color: #2c3e50; /* Darker Grey Blue */
+}
+  
+/* Task List Styling */
+.task-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+  
+.task-card {
+    background-color: #2c3e50; /* Dark Blue */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s;
+}
+  
+.task-card:hover {
+    transform: translateY(-5px);
+}
+  
+.task-info {
+    max-width: 80%;
+}
+  
+.task-info h3 {
+    margin: 0 0 5px 0;
+    color: #3498db; /* Bright Blue */
+}
+  
+.task-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+  
+.task-actions .delete-btn {
+    background-color: #e74c3c; /* Red */
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.task-actions .delete-btn:hover {
+    background-color: #c0392b; /* Darker Red */
+}
+  
+.task-actions input[type="checkbox"] {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+  
+/* Footer Styling */
+footer {
+    background-color: #2c3e50; /* Dark Blue */
+    color: #e0e0e0; /* Light Grey */
+    padding: 20px 40px; /* Added horizontal padding for spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-left p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    color: #e0e0e0; /* Light Grey */
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #bdc3c7; /* Light Gray */
+}
+
+
+/* Strikethrough and lighter background for completed tasks */
+.completed {
+    background-color: #34495e; /* Grey Blue */
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.completed h3 {
+    color: #95a5a6; /* Greyish Blue */
+}
+
+.completed p {
+    color: #7f8c8d; /* Darker Greyish Blue */
+}
