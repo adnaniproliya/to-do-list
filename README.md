@@ -1,6 +1,6 @@
 # To-Do List
 
-Welcome to Adnan's To-Do List! This project is a simple, yet functional to-do list web application designed to help you stay organized and productive.
+Welcome to Adnan's To-Do List! This is a beautifully designed, functional to-do list web application designed to help you stay organized and productive.
 
 ## Features
 
